@@ -1,0 +1,251 @@
+<title>Attend Privacy Policy</title>
+<style>
+  /* Layout: single-column legal document, sticky section nav on wide screens, stacked on phone */
+  :root {
+    --bg: #faf9f6;
+    --surface: #ffffff;
+    --ink: #1c1b19;
+    --ink-soft: #55534d;
+    --border: #e4e1d8;
+    --accent: #2f5d4f;
+    --accent-soft: #e4ece8;
+    --display: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15140f;
+      --surface: #1d1c17;
+      --ink: #efece4;
+      --ink-soft: #a9a598;
+      --border: #332f26;
+      --accent: #74c2a4;
+      --accent-soft: #223129;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15140f;
+    --surface: #1d1c17;
+    --ink: #efece4;
+    --ink-soft: #a9a598;
+    --border: #332f26;
+    --accent: #74c2a4;
+    --accent-soft: #223129;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--body);
+    line-height: 1.6;
+    padding-inline: 20px;
+    padding-block: 32px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+
+  header.top {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid var(--border);
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  h1 {
+    font-family: var(--display);
+    font-size: clamp(28px, 5vw, 38px);
+    margin: 0;
+    text-wrap: balance;
+  }
+  .meta { color: var(--ink-soft); font-size: 14px; }
+
+  nav.jump {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+  nav.jump a {
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--ink);
+    text-decoration: none;
+    background: var(--surface);
+  }
+  nav.jump a:hover { border-color: var(--accent); color: var(--accent); }
+
+  section { margin-bottom: 40px; scroll-margin-top: 20px; }
+  h2 {
+    font-family: var(--display);
+    font-size: 22px;
+    margin: 0 0 14px;
+    padding-top: 4px;
+  }
+  h3 {
+    font-family: var(--body);
+    font-weight: 600;
+    font-size: 15px;
+    margin: 20px 0 8px;
+    color: var(--ink);
+  }
+  p { margin: 0 0 12px; max-width: 65ch; }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  li { margin-bottom: 6px; max-width: 62ch; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin: 16px 0;
+  }
+  .card p:last-child { margin-bottom: 0; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin: 12px 0 20px;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th { font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-soft); }
+
+  code {
+    font-family: var(--mono);
+    font-size: 0.9em;
+    background: var(--accent-soft);
+    padding: 1px 6px;
+    border-radius: 4px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 14px;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+    padding-top: 16px;
+    color: var(--ink-soft);
+    font-size: 13px;
+  }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <span class="eyebrow">Attend &middot; Android app</span>
+    <h1>Privacy Policy &amp; Data Subject Rights</h1>
+    <span class="meta">Last updated: October 2026 &middot; Developer: Karar Al-Fahham</span>
+  </header>
+
+  <nav class="jump">
+    <a href="#privacy-policy">Privacy Policy</a>
+    <a href="#data-subject-rights">Data Subject Rights</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="privacy-policy">
+    <h2>Privacy Policy</h2>
+    <p>Attend is an offline attendance-scanning app for classroom use. This policy explains what data the app handles, how it is stored, and what — if anything — ever leaves your device.</p>
+
+    <h3>What Attend stores, and where</h3>
+    <p>All class, student, and attendance data you enter into Attend is stored <strong>only on your device</strong>, in the app's private local storage. Attend does not operate a server and does not sync, upload, or back up this data anywhere.</p>
+    <table>
+      <thead>
+        <tr><th>Data</th><th>Source</th><th>Where it's stored</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Student name &amp; ID</td><td>CSV you upload, or typed in by you</td><td>On-device only</td></tr>
+        <tr><td>Attendance records (present/absent, timestamps)</td><td>QR codes scanned via the device camera</td><td>On-device only</td></tr>
+        <tr><td>Generated CSV / PDF / video files</td><td>Created by the app from the data above</td><td>On-device storage (Downloads / Movies folders)</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Camera use</h3>
+    <p>Attend uses your device's back camera to scan QR codes and, if you use the optional "Scan and record" feature, to record video of a scanning session. Camera frames used for scanning are processed on-device by Google's ML Kit barcode library and are never transmitted anywhere. Recorded video is saved directly to your device's storage and is never uploaded.</p>
+
+    <h3>License activation (the only network request Attend makes)</h3>
+    <p>Attend offers a free trial and an optional paid license. Activating a license key sends the license key and a basic device identifier (your phone's manufacturer and model) to Lemon Squeezy Inc., the payment and licensing provider, solely to validate the key. This happens once, at activation — Attend does not contact any server afterward. Lemon Squeezy's own handling of this data is described in its privacy policy: <a href="https://www.lemonsqueezy.com/privacy" target="_blank" rel="noopener">lemonsqueezy.com/privacy</a>.</p>
+
+    <h3>What Attend does not do</h3>
+    <ul>
+      <li>No analytics or usage tracking</li>
+      <li>No advertising or ad identifiers</li>
+      <li>No user accounts or sign-in</li>
+      <li>No cloud storage or backup of class/student data</li>
+      <li>No sharing or selling of data to third parties</li>
+    </ul>
+
+    <h3>Data about students</h3>
+    <p>Student names and ID numbers are entered by the teacher using Attend, not collected directly from students. This data stays on the teacher's device under the teacher's control, and the institution's own data-handling policies apply to how rosters are sourced and used.</p>
+
+    <h3>Children's data</h3>
+    <p>Attend is intended for use by teachers and institution staff, not by children directly. Any student data entered may relate to minors; it is handled the same as all other Attend data — stored locally only, never transmitted, and never used for any purpose beyond attendance tracking on the device where it was entered.</p>
+
+    <h3>Data retention and deletion</h3>
+    <p>Data persists on your device until you delete it within the app, clear the app's storage, or uninstall Attend. Uninstalling the app removes its locally stored database. Files you've exported (CSV, PDF, video) to your Downloads or Movies folder are not removed automatically and can be deleted like any other file on your device.</p>
+
+    <h3>Changes to this policy</h3>
+    <p>If this policy changes, the update will be posted at this same URL with a revised "Last updated" date.</p>
+  </section>
+
+  <section id="data-subject-rights">
+    <h2>Data Subject Rights</h2>
+    <p>Because Attend stores class and attendance data only on your own device, you are already in direct control of it — most rights below are exercised on-device, with no need to contact anyone.</p>
+
+    <div class="card">
+      <h3>Access &amp; export</h3>
+      <p>Open any class in Attend to view its roster and session history. Use the app's built-in export (CSV/PDF) to obtain a copy of any data at any time.</p>
+    </div>
+    <div class="card">
+      <h3>Correction</h3>
+      <p>Edit or correct student names and IDs directly in Attend's "Edit students" screen. Changes apply immediately and locally.</p>
+    </div>
+    <div class="card">
+      <h3>Deletion</h3>
+      <p>Delete individual students, sessions, or whole classes from within the app, or remove all app data at once via your device's Settings &rarr; Apps &rarr; Attend &rarr; Storage &rarr; Clear storage, or by uninstalling the app.</p>
+    </div>
+    <div class="card">
+      <h3>License / activation data</h3>
+      <p>The only data that ever leaves your device is the license key and device identifier sent to Lemon Squeezy at activation. To request access to, correction of, or deletion of that record, contact Lemon Squeezy directly: <a href="https://www.lemonsqueezy.com/privacy" target="_blank" rel="noopener">lemonsqueezy.com/privacy</a>.</p>
+    </div>
+    <div class="card">
+      <h3>Questions or requests</h3>
+      <p>For anything not covered above, or to ask a question about how Attend handles data, use the contact details below. Requests are normally handled within a reasonable time.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <span>Developer: Karar Al-Fahham</span>
+      <span>Email: kararam2@gmail.com</span>
+      <span>WhatsApp: +964 785 400 0522</span>
+    </div>
+  </section>
+
+  <footer>
+    This page serves as both the Privacy Policy and the Data Subject Rights notice for the Attend Android app. Link directly to a section using <code>#privacy-policy</code> or <code>#data-subject-rights</code>.
+  </footer>
+</div>
